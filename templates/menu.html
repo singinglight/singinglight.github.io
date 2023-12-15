@@ -1,0 +1,80 @@
+<nav class="navigation">
+	<!-- <div class="logo" style="background-color: #da8181;">
+		<div class="log-icon height" style="background-color: #12adb8;"">
+			<a href="test2.html"><img src="img/屏幕截图 2023-12-08 173057.png"/></a>
+		</div>
+		<div style="height: 100%;""><a href="#" class="log-text" style="background-color: #12adb8;">NAIADS</a></div>
+	</div>
+	<div style="background-color: aqua;"></div> -->
+	<div class="logo">
+		<div class="log-icon">
+			<a href="{{ url_for('index') }}"><img src="{{url_for('static', filename='img/R-C (1).gif')}}" alt=""></a>
+		</div>
+		<div class="log-name">
+			<a href="#">
+				<div class="logo-text">SIKA</div>
+			</a>
+		</div>
+	</div>
+	<div class="nav-items">
+		<ul class="nav-frame">
+			<li class="nav1">
+				<a href="{{ url_for('index') }}">
+					<img src="{{url_for('static',filename='img/Home.png')}}" style="height: 70%;"/>
+					<p style="margin-top: 3%;color: white">HOME</p>
+				</a>
+			</li>
+			<div class="nav1">
+				<img src="{{url_for('static',filename='img/Team.png')}}" style="height: 70%;"/>
+				<p style="margin-top: 3%;color: white">TEAM</p>
+				<div class="nav2">
+					<p><a href="{{ url_for('pages', page='member') }}">Members</a></p>
+					<p><a href="#">Attributions</a></p>
+					<p><a href="#">Notebook</a></p>
+					<p><a href="#">Experiments</a></p>
+					<p><a href="#">Safty</a></p>
+					<p><a href="#">Collaborations</a></p>
+				</div>
+			</div>
+			<div class="nav1">
+				<img src="{{url_for('static',filename='img/Project.png')}}" style="height: 70%;"/>
+				<p style="margin-top: 3%;color: white">PROJECT</p>
+				<div class="nav2">
+					<p><a href="#">Description</a></p>
+					<p><a href="#">Design</a></p>
+					<p><a href="#">Engineering Success</a></p>
+					<p><a href="#">Results</a></p>
+					<p><a href="#">Proof of Concept</a></p>
+					<p><a href="#">Proposed Implementation</a></p>
+				</div>
+			</div>
+			<div class="nav1">
+				<img src="{{url_for('static',filename='img/Lab.png')}}" style="height: 70%;"/>
+				<p style="margin-top: 3%;color: white">LAB</p>
+				<div class="nav2">
+					<p><a href="#">Hardware</a></p>
+					<p><a href="#">Software</a></p>
+				</div>
+			</div>
+			<div class="nav1">
+				<img src="{{url_for('static',filename='img/HP.png')}}" style="height: 70%;"/>
+				<p style="margin-top: 3%;color: white">HP</p>
+				<div class="nav2">
+					<p><a href="#">Human Practices</a></p>
+					<p><a href="#">Integrated Human Practices</a></p>
+				</div>
+			</div>
+			<div class="nav1">
+				<img src="{{url_for('static',filename='img/Award.png')}}" style="height: 70%;"/>
+				<p style="margin-top: 3%;color: white">AWARDS</p>
+				<div class="nav2">
+					<p><a href="#">Awards</a></p>
+					<p><a href="#">Best New Basic Part</a></p>
+					<p><a href="#">Engineering Success</a></p>
+					<p><a href="#">Best Hardware</a></p>
+					<p><a href="#">Best Integrated Human Practice</a></p>
+				</div>
+			</div>
+		</ul>
+	</div>
+</nav>

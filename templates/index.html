@@ -1,0 +1,32 @@
+<!--index layout-->
+<!doctype html>
+<html lang="en" style="background-color: #FBF7EB">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ url_for('static', filename = 'loading.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'nav.css') }}" rel="stylesheet">
+  <title>{% block title %}{% endblock %} XMU-China - iGEM 2022</title>
+</head>
+<body>
+<main style="background-color: #FBF7EB;overflow: hidden;">
+  <!--loading-->
+  <div id="loader-wrapper">
+    <div id="loader">
+    <div class="loader-img">
+      <img src="https://ts1.cn.mm.bing.net/th/id/R-C.91da6c7dab0c1206c57ed7306c1c4ad9?rik=SdImrQs2yDui8A&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f01ce7e571a50856ac725381283bcb9.gif&ehk=KSxRz2%2feXOd2dsygegZjOwUZukov7SXwcr9Ze%2b16nrE%3d&risl=&pid=ImgRaw&r=0" >
+    </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+</main>
+<a href="{{ url_for('pages', page='menu') }}">Attributions</a>
+<script src="{{ url_for('static', filename = 'jquery-3.5.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'loading.js') }}"></script>
+
+</body>
+</html>
+
+
