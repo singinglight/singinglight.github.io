@@ -2,6 +2,7 @@
 {% block title %}Education{% endblock %}
 
 {% block page_content %}
+<link href="{{ url_for('static', filename = 'css/index.css') }}" rel="stylesheet">
 <!--loading-->
 <div id="loader-wrapper">
   <div id="loader">
@@ -13,4 +14,57 @@
   <div class="loader-section section-right"></div>
 </div>
 
+<main>
+    <div>
+<!--        <div style="height: 11.8vh"></div>	&lt;!&ndash; 占位格 &ndash;&gt;-->
+        <div class="part1" style="background-image: url({{url_for('static',filename='img/one.png')}});">
+            <div class="lines">
+                <div class="line1">
+                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>
+                </div>
+                <div class="line2">
+                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>
+                </div>
+                <div class="line3">
+                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>
+                </div>
+            </div>
+            <div class="page"></div>
+        </div>
+        <div class="part2" style="background-image: url({{url_for('static',filename='img/two.png')}});">
+            <div class="paper-ground" style="margin-left: 7vw;">
+                <div class="paper"></div>
+            </div>
+            <div class="paper-ground" style="margin-left: 1vw;">
+                <div class="paper"></div>
+            </div>
+            <div class="paper-ground" style="margin-left: 1vw;">
+                <div class="paper"></div>
+            </div>
+        </div>
+        <div class="part3" style="background-image: url({{url_for('static',filename='img/three.png')}});">
+            <div class="text-square"></div>
+            <div class="sun"></div>
+        </div>
+        <div class="part4" style="background-image: url('{{url_for('static',filename='img/four.png')}}');">
+            <div class="lefttop">
+                <div class="lefttop-child"></div>
+            </div>
+        </div>
+        <div class="part5" style="background-image: url({{url_for('static',filename='img/five.png')}});">
+            <div class="blackbar" style="width: 90vw;"></div>
+            <div class="blackbar" style="width: 40vw;margin-top: 2vh;"></div>
+            <div class="paper-ground">
+                <div class="paper1"></div>
+            </div>
+        </div>
+        <div class="part6" style="background-image: url({{url_for('static',filename='img/six.jpg')}});">
+            <div class="image">
+                <img src="{{url_for('static',filename='img/DeerGirl.jpg')}}" />
+            </div>
+            <div class="text-square" style="margin-left: -16vw;"></div>
+            <div class="text-square" style="margin-left: 4vw;"></div>
+        </div>
+    </div>
+</main>
 {% endblock %}
