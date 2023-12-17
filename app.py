@@ -1,15 +1,18 @@
 from flask import  Flask, render_template
+from pathlib import Path
+from flask_frozen import Freezer
 
-app = Flask(__name__)
-
+app = Flask(__name__, template_folder='./templates')
 
 @app.route('/')
 def index():
-   return render_template('/index1.html')
+   return render_template(str(Path('pages')) + '/index1.html')
 
 @app.route('/<page>')
 def pages(page):
-    return render_template(page.lower() + '.html')
+    return render_template(str(Path('pages')) + '/' + page.lower() + '.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
+    freezer = Freezer(app)
+    freezer.freeze()
