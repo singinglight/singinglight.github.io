@@ -8,11 +8,13 @@
 	<div style="background-color: aqua;"></div> -->
 	<div class="logo">
 		<div class="log-icon">
-			<a href="{{ url_for('index') }}"><img src="{{url_for('static', filename='img/DeerGirl.jpg')}}" alt=""></a>
+			<a href="{{ url_for('index') }}">
+				<img src="{{url_for('static',filename='img/DeerGirl.jpg')}}" style="margin-top: 0.6vw; height: 90%;"/>
+			</a>
 		</div>
 		<div class="log-name">
 			<a href="#">
-				<div class="logo-text">SIKA</div>
+				<div class="logo-font" style="background-image: url({{url_for('static',filename='img/sika.png')}});"></div>
 			</a>
 		</div>
 	</div>

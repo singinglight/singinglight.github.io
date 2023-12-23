@@ -1,70 +1,139 @@
 {% extends "layout.html" %}
-{% block title %}Education{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block page_content %}
 <link href="{{ url_for('static', filename = 'css/index.css') }}" rel="stylesheet">
 <!--loading-->
-<div id="loader-wrapper">
-  <div id="loader">
-  <div class="loader-img">
-    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.91da6c7dab0c1206c57ed7306c1c4ad9?rik=SdImrQs2yDui8A&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f01ce7e571a50856ac725381283bcb9.gif&ehk=KSxRz2%2feXOd2dsygegZjOwUZukov7SXwcr9Ze%2b16nrE%3d&risl=&pid=ImgRaw&r=0" >
-  </div>
-  </div>
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
-</div>
-
-<main>
-    <div>
-<!--        <div style="height: 11.8vh"></div>	&lt;!&ndash; 占位格 &ndash;&gt;-->
-        <div class="part1" style="background-image: url({{url_for('static',filename='img/one.png')}});">
-            <div class="lines">
-                <div class="line1">
-                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>
-                </div>
-                <div class="line2">
-                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>
-                </div>
-                <div class="line3">
-                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>
-                </div>
+<!--<div id="loader-wrapper">-->
+<!--  <div id="loader">-->
+<!--  <div class="loader-img">-->
+<!--    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.91da6c7dab0c1206c57ed7306c1c4ad9?rik=SdImrQs2yDui8A&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f01ce7e571a50856ac725381283bcb9.gif&ehk=KSxRz2%2feXOd2dsygegZjOwUZukov7SXwcr9Ze%2b16nrE%3d&risl=&pid=ImgRaw&r=0" >-->
+<!--  </div>-->
+<!--  </div>-->
+<!--  <div class="loader-section section-left"></div>-->
+<!--  <div class="loader-section section-right"></div>-->
+<!--</div>-->
+<div>
+    <div style="height: 6.25rem"></div>	<!-- 占位格 -->
+    <div class="part1" style="background-image: url({{url_for('static',filename='img/first-page.jpg')}});">
+<!--            <div class="lines">-->
+<!--                <div class="line1">-->
+<!--                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>-->
+<!--                </div>-->
+<!--                <div class="line2">-->
+<!--                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>-->
+<!--                </div>-->
+<!--                <div class="line3">-->
+<!--                    <h1 style="font-family: fantasy;font-size: 3vh;color: pink;">IGEM</h1>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="page"></div>-->
+        <div class="content">
+            <div class="sika-icon">
+                <img src="{{url_for('static',filename='img/sika-icon.jpg')}}" style="margin-left: 5vw;"/>
             </div>
-            <div class="page"></div>
-        </div>
-        <div class="part2" style="background-image: url({{url_for('static',filename='img/two.png')}});">
-            <div class="paper-ground" style="margin-left: 7vw;">
-                <div class="paper"></div>
+            <div class="first-page-font" style="width: 25vw; margin-left: 7vw;text-align: center;">
+                Practical solutions to
             </div>
-            <div class="paper-ground" style="margin-left: 1vw;">
-                <div class="paper"></div>
+            <div class="first-page-font" style="width: 30vw; margin-left: 4vw;text-align: center;">
+                keeping imperfection away
             </div>
-            <div class="paper-ground" style="margin-left: 1vw;">
-                <div class="paper"></div>
-            </div>
-        </div>
-        <div class="part3" style="background-image: url({{url_for('static',filename='img/three.png')}});">
-            <div class="text-square"></div>
-            <div class="sun"></div>
-        </div>
-        <div class="part4" style="background-image: url('{{url_for('static',filename='img/four.png')}}');">
-            <div class="lefttop">
-                <div class="lefttop-child"></div>
-            </div>
-        </div>
-        <div class="part5" style="background-image: url({{url_for('static',filename='img/five.png')}});">
-            <div class="blackbar" style="width: 90vw;"></div>
-            <div class="blackbar" style="width: 40vw;margin-top: 2vh;"></div>
-            <div class="paper-ground">
-                <div class="paper1"></div>
-            </div>
-        </div>
-        <div class="part6" style="background-image: url({{url_for('static',filename='img/six.jpg')}});">
-            <div class="image">
-                <img src="{{url_for('static',filename='img/DeerGirl.jpg')}}" />
-            </div>
-            <div class="text-square" style="margin-left: -16vw;"></div>
-            <div class="text-square" style="margin-left: 4vw;"></div>
+            <button class="promotion-button" style="margin-left: 10vw;margin-top: 5vh;"><span>Promotion Vedio</span></button>
         </div>
     </div>
-</main>
+    <div class="part2" style="background-image: url({{url_for('static',filename='img/two.png')}});">
+        <div class="paper-ground" style="margin-left: 7vw;">
+            <div class="paper">
+                真正的平静，不是避开车马喧嚣，<br />
+                而是在心中修篱种菊。<br />
+                尽管如流往事，每一天都涛声依旧，<br />
+                只要我们消除执念，便可寂静安然。<br />
+                愿每个人，在纷呈世相中不会迷失荒径，<br />
+                可以端坐磐石上，醉倒落花前。<br />
+            </div>
+        </div>
+        <div class="paper-ground" style="margin-left: 1vw;">
+            <div class="paper">
+                真正的平静，不是避开车马喧嚣，<br />
+                而是在心中修篱种菊。<br />
+                尽管如流往事，每一天都涛声依旧，<br />
+                只要我们消除执念，便可寂静安然。<br />
+                愿每个人，在纷呈世相中不会迷失荒径，<br />
+                可以端坐磐石上，醉倒落花前。<br />
+            </div>
+        </div>
+        <div class="paper-ground" style="margin-left: 1vw;">
+            <div class="paper">
+                真正的平静，不是避开车马喧嚣，<br />
+                而是在心中修篱种菊。<br />
+                尽管如流往事，每一天都涛声依旧，<br />
+                只要我们消除执念，便可寂静安然。<br />
+                愿每个人，在纷呈世相中不会迷失荒径，<br />
+                可以端坐磐石上，醉倒落花前。<br />
+            </div>
+        </div>
+    </div>
+    <div class="part3" style="background-image: url({{url_for('static',filename='img/three.png')}});">
+        <div class="text-square">
+            真正的平静，不是避开车马喧嚣，<br />
+            而是在心中修篱种菊。<br />
+            尽管如流往事，每一天都涛声依旧，<br />
+            只要我们消除执念，便可寂静安然。<br />
+            愿每个人，在纷呈世相中不会迷失荒径，<br />
+            可以端坐磐石上，醉倒落花前。<br />
+        </div>
+<!--        <div class="sun"></div>-->
+    </div>
+    <div class="part4" style="background-image: url('{{url_for('static',filename='img/four.png')}}');">
+        <div class="lefttop">
+            <div class="lefttop-child">
+                真正的平静，不是避开车马喧嚣，<br />
+                而是在心中修篱种菊。<br />
+                尽管如流往事，每一天都涛声依旧，<br />
+                只要我们消除执念，便可寂静安然。<br />
+                愿每个人，在纷呈世相中不会迷失荒径，<br />
+                可以端坐磐石上，醉倒落花前。<br />
+            </div>
+        </div>
+    </div>
+    <div class="part5" style="background-image: url({{url_for('static',filename='img/five.png')}});">
+        <div class="blackbar" style="width: 90vw;"></div>
+        <div class="blackbar" style="width: 40vw;margin-top: 2vh;"></div>
+        <div class="paper-ground">
+            <div class="paper1">
+                真正的平静，不是避开车马喧嚣，<br />
+                而是在心中修篱种菊。<br />
+                尽管如流往事，每一天都涛声依旧，<br />
+                只要我们消除执念，便可寂静安然。<br />
+                愿每个人，在纷呈世相中不会迷失荒径，<br />
+                可以端坐磐石上，醉倒落花前。<br />
+                真正的平静，不是避开车马喧嚣，<br />
+                而是在心中修篱种菊。<br />
+                尽管如流往事，每一天都涛声依旧，<br />
+                只要我们消除执念，便可寂静安然。<br />
+            </div>
+        </div>
+    </div>
+    <div class="part6" style="background-image: url({{url_for('static',filename='img/six.jpg')}});">
+        <div class="image">
+            <img src="{{url_for('static',filename='img/wonderful.png')}}" />
+        </div>
+        <div class="text-square" style="margin-left: -10vw;">
+            真正的平静，不是避开车马喧嚣，<br />
+            而是在心中修篱种菊。<br />
+            尽管如流往事，每一天都涛声依旧，<br />
+            只要我们消除执念，便可寂静安然。<br />
+            愿每个人，在纷呈世相中不会迷失荒径，<br />
+            可以端坐磐石上，醉倒落花前。<br />
+        </div>
+        <div class="text-square" style="margin-left: 10vw;">
+            真正的平静，不是避开车马喧嚣，<br />
+            而是在心中修篱种菊。<br />
+            尽管如流往事，每一天都涛声依旧，<br />
+            只要我们消除执念，便可寂静安然。<br />
+            愿每个人，在纷呈世相中不会迷失荒径，<br />
+            可以端坐磐石上，醉倒落花前。<br />
+        </div>
+    </div>
+</div>
 {% endblock %}

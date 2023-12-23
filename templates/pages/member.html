@@ -1,37 +1,65 @@
-{% extends "layout.html" %}
-{% block title %}Education{% endblock %}
+{% extends "layout2.html" %}
+{% block title %}Member{% endblock %}
 
 {% block page_content %}
+<link href="{{ url_for('static', filename = 'css/member.css') }}" rel="stylesheet">
 <!--loading-->
-  <div id="loader-wrapper">
-    <div id="loader">
-    <div class="loader-img">
-      <img src="https://ts1.cn.mm.bing.net/th/id/R-C.91da6c7dab0c1206c57ed7306c1c4ad9?rik=SdImrQs2yDui8A&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f01ce7e571a50856ac725381283bcb9.gif&ehk=KSxRz2%2feXOd2dsygegZjOwUZukov7SXwcr9Ze%2b16nrE%3d&risl=&pid=ImgRaw&r=0" >
+<!--<div id="loader-wrapper">-->
+<!--  <div id="loader">-->
+<!--  <div class="loader-img">-->
+<!--    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.91da6c7dab0c1206c57ed7306c1c4ad9?rik=SdImrQs2yDui8A&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f01ce7e571a50856ac725381283bcb9.gif&ehk=KSxRz2%2feXOd2dsygegZjOwUZukov7SXwcr9Ze%2b16nrE%3d&risl=&pid=ImgRaw&r=0" >-->
+<!--  </div>-->
+<!--  </div>-->
+<!--  <div class="loader-section section-left"></div>-->
+<!--  <div class="loader-section section-right"></div>-->
+<!--</div>-->
+<div class="member_ground" style="background-image: url({{ url_for('static', filename = 'img/background.jpg') }});">
+    <!-- <div style="height: 6.25rem"></div> -->
+    <div class="creator_title" style="transform: translateY(14vh);">
+        <div class="title_left">
+            <img src="{{ url_for('static', filename = 'img/video.jpg') }}" style="position: absolute;float: left;bottom: -5vh;left: 0vw;"/>
+        </div>
+        <div class="title_right">
+            <img src="{{ url_for('static', filename = 'img/creator_title.jpg') }}" style="width: 50vw;height: 20vh;"/>
+        </div>
     </div>
+    <div class="video-container">
+        <video src="{{ url_for('static', filename = 'img/scenery.mp4') }}" controls style="z-index: 9;height: 50vh;width: 60.5vw;object-fit: cover;"></video>
     </div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
-<h1>IGEM</h1>
+    <div class="who">
+        <img src="{{ url_for('static', filename = 'img/who.jpg') }}" style="height: 20vh;width: 40vw;"/>
+    </div>
+    <div class="member">
+        <div class="photos">
+            <div class="photo" style="">
+                <img src="{{ url_for('static', filename = 'img/tyb.png') }}" style="height: 23vh;width: 23vh;margin-left: -2vw;"/>
+            </div>
+            <div class="photo" style="">
+                <img src="{{ url_for('static', filename = 'img/zy.png') }}" style="height: 23vh;width: 23vh;margin-left: 0vw;"/>
+            </div>
+            <div class="photo" style="">
+                <img src="{{ url_for('static', filename = 'img/xyq.png') }}" style="height: 23vh;width: 23vh;margin-left: 2vw;"/>
+            </div>
+        </div>
+        <div class="names">
+            <div class="name" style="margin-left: 3vw;">Yunbo Tang</div>
+            <div class="name" style="margin-left: 9.5vw;">Yi Zhang</div>
+            <div class="name" style="margin-left: 10vw;">Yuqing Xiang</div>
+        </div>
+    </div>
+    <div class="motto">
+        <div class="motto_title">
+            <img src="{{ url_for('static', filename = 'img/motto.png') }}" style="width: 4vw; height: 30vh;"/>
+        </div>
+        <div class="saying" style="margin-top: 16.5vh;margin-left: 1vw;width: 35.5vw;">
+            No road to glory is paved with flowers.
+        </div>
+        <div class="saying" style="margin-top: 32.5vh;margin-left: -18.5vw;width: 37.5vw;">
+            Simplicity is the ultimate sophistication.
+        </div>
+        <div class="saying" style="margin-top: 7.8vh;width: 16vw;margin-left: 1.8vw;">
+            Everything is ok.
+        </div>
+    </div>
+</div>
 {% endblock %}

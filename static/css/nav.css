@@ -3,7 +3,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100px;
-	background-color: #2d3337;
+	background-color: #2f3439;
 	border-top-left-radius: 0.3125rem;
 	display: flex;
 	flex-direction: row;
@@ -24,14 +24,19 @@
 	height: 100px;
 	width: 50%;
 }
-.logo-text{
+.logo-font{
+	height: 100px;
+	width: 100%;
+	background-size: 100% 100%;
+}
+/* .logo-text{
 	position: relative;
 	font-size: 3rem;
 	top: 25%;
 	left: 10%;
 	color: white;
 	font-family: fantasy;
-}
+} */
 div img{
 	width: 60%;
 	height: 100%;
