@@ -1,0 +1,107 @@
+.navigation{
+	top: 0%;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: #2f3439;
+	border-top-left-radius: 0.3125rem;
+	display: flex;
+	flex-direction: row;
+	z-index: 100;
+}
+.logo{
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	width: 30%;
+}
+.log-icon{
+	text-align: right;
+	height: 100px;
+	width: 50%;
+}
+.log-name{
+	height: 100px;
+	width: 50%;
+}
+.logo-font{
+	height: 100px;
+	width: 100%;
+	background-size: 100% 100%;
+}
+/* .logo-text{
+	position: relative;
+	font-size: 3rem;
+	top: 25%;
+	left: 10%;
+	color: white;
+	font-family: fantasy;
+} */
+div img{
+	width: 60%;
+	height: 100%;
+	object-fit: cover;
+}
+.nav-items{
+	height: 100px;
+	width: 60%;
+	transform: translateX(30%);
+	text-align: center;
+}
+.nav-frame{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100px;
+	transform: translateY(-15%);
+}
+ul li{
+	list-style: none;
+	float: left;
+	height: 100px;
+}/* 删除列表的样式并设置浮动 */
+ul div{
+	float: left;
+	height: 100px;
+}
+li img{
+	height: 70%;
+}
+li p{
+	margin-top: 3%;
+	color: white;
+}
+a{
+	text-decoration: none;
+}
+.nav1{
+	position: relative;/* 设置相对定位 */
+	display: inline-block;/* 让元素具有块级元素和行内元素的特性,即将块级元素转化为内联元素 */
+	width: 12%
+}
+.nav2{
+	display: none;/* 将某元素隐藏起来 */
+	position: absolute;/* 绝对定位 */
+	background-color: #f9f9f9;
+	width: 120px;
+	height: auto;
+}
+.nav2 a {
+	color: black;
+	padding: 12px 16px；
+	display: block;/* 将a标签设置为块级标签 */
+}
+
+.nav2 a:hover {
+	background-color: #da8181
+}/* 鼠标悬浮时的颜色 */
+
+.nav1:hover .nav2 {
+	display: flex;
+	flex-direction: column;
+	top: 100%;
+}/* 鼠标悬浮在元素上时,变为块级标签 */
+
+.nav1:hover,li:hover{
+	background-color: #12adb8;
+}
