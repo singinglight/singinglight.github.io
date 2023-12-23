@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="video-container">
-        <video src="{{ url_for('static', filename = 'img/scenery.mp4') }}" controls style="z-index: 9;height: 50vh;width: 60.5vw;object-fit: cover;"></video>
+        <video src="{{ url_for('static', filename = 'img/scenery.mp4') }}" controls poster="{{ url_for('static', filename = 'img/scene.png') }}" style="z-index: 9;height: 50vh;width: 60.5vw;object-fit: cover;"></video>
     </div>
     <div class="who">
         <img src="{{ url_for('static', filename = 'img/who.jpg') }}" style="height: 20vh;width: 40vw;"/>
