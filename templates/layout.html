@@ -10,6 +10,7 @@
     <link href="{{ url_for('static', filename = 'css/footer.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/theme.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/index.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/for-phone.css') }}" rel="stylesheet">
 
     <script src="{{ url_for('static', filename = 'js/jquery-3.5.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/loading.js') }}"></script>
@@ -38,6 +39,16 @@
     </div>
 
     <div class="toTop"></div>
+
+    <div class="for-phone row-cols-2">
+      <div class="col-lg-6 py-3 wow zoomIn">
+        <h2 class="title-section tips" style="font-weight: bold">Please open with computer.</h2>
+      </div>
+      <div class="col-lg-6 py-3 wow zoomIn">
+        <div class="illustration" style="scale: 0.8"><img
+                src="https://static.igem.wiki/teams/4195/wiki/background/cute.png"></div>
+      </div>
+    </div>
 
     <!-- Navigation -->
     {% include 'menu.html' %}
