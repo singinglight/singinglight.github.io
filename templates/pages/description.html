@@ -8,28 +8,52 @@
     <div class="left-bar">
         <div class="left-bar-right">
             <div class="left-bar-right-item">
-                <a href="#section1" class="sidebar-link" data-section="section1">1 Part</a>
+                <a href="#section1" class="sidebar-link" data-section="section1">一、背景</a>
             </div>
             <div class="left-bar-right-item">
-                <a href="#section2" class="sidebar-link" data-section="section2">2 Part</a>
+                <a href="#section2" class="sidebar-link" data-section="section2">二、当前解决方案</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section3" class="sidebar-link" data-section="section3">三、项目</a>
             </div>
             <div class="left-bar-right-item-two small-item">
-                <a href="#childSection1" class="sidebar-link-two" data-section="childSection1">2.1 part</a>
+                <a href="#childSection1" class="sidebar-link-two" data-section="childSection1">（一）预处理</a>
             </div>
             <div class="left-bar-right-item-three small-item">
-                <a href="#cchildSection1" class="sidebar-link-two" data-section="cchildSection1">2.1.1 ppart</a>
+                <a href="#cchildSection1" class="sidebar-link-two" data-section="cchildSection1">1.整体处理</a>
             </div>
             <div class="left-bar-right-item-three small-item">
-                <a href="#cchildSection2" class="sidebar-link-two" data-section="cchildSection2">2.1.2 ppart</a>
+                <a href="#cchildSection2" class="sidebar-link-two" data-section="cchildSection2">2.贱金属处理</a>
             </div>
             <div class="left-bar-right-item-four small-item">
-                <a href="#ccchildSection1" class="sidebar-link-two" data-section="ccchildSection1">2.1.1.1 pppart</a>
+                <a href="#ccchildSection1" class="sidebar-link-two" data-section="ccchildSection1">（1）Cu的处理</a>
+            </div>
+            <div class="left-bar-right-item-four small-item">
+                <a href="#ccchildSection2" class="sidebar-link-two" data-section="ccchildSection2">（2）Ni、Co、Mn等浸出的处理</a>
             </div>
             <div class="left-bar-right-item-five small-item">
-                <a href="#cccchildSection6" class="sidebar-link-two" data-section="cccchildSection1">2.1.1.1.1 ppppart</a>
+                <a href="#cccchildSection1" class="sidebar-link-two" data-section="cccchildSection1">design 1</a>
+            </div>
+            <div class="left-bar-right-item-five small-item">
+                <a href="#cccchildSection2" class="sidebar-link-two" data-section="cccchildSection2">design 2</a>
+            </div>
+            <div class="left-bar-right-item-two small-item">
+                <a href="#childSection2" class="sidebar-link-two" data-section="childSection2">（二）浸出氰化</a>
+            </div>
+            <div class="left-bar-right-item-two small-item">
+                <a href="#childSection3" class="sidebar-link-two" data-section="childSection3">（三）磁性活性碳回收络合物及洗脱</a>
+            </div>
+            <div class="left-bar-right-item-two small-item">
+                <a href="#childSection4" class="sidebar-link-two" data-section="childSection4">（四）电能细胞还原获得海绵金</a>
             </div>
             <div class="left-bar-right-item">
-                <a href="#section3" class="sidebar-link" data-section="section3">3 Overview</a>
+                <a href="#section4" class="sidebar-link" data-section="section4">四、生物安全与环境友好</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section5" class="sidebar-link" data-section="section5">五、模块化的工业流程对接</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section6" class="sidebar-link" data-section="section6">六、Reference</a>
             </div>
         </div>
     </div>
@@ -40,151 +64,138 @@
     <div class="myPage-main">
         <div style="height: 12vh;position:relative;"></div>
         <div class="page-background">
-            <img src="img/hourglass.png" style="transform: translateX(15vw);width: 60vw;z-index: -2;"/>
-            <img src="img/description.png" style="transform: translate(15vw,-50vh) rotate(30deg);height: 27vh;60vw"/>
+            <img src="{{url_for('static',filename='img/hourglass.png')}}" style="transform: translateX(15vw);width: 60vw;z-index: -2;"/>
+            <img src="img/{{url_for('static',filename='img/description.png')}}" style="transform: translate(15vw,-50vh) rotate(30deg);height: 27vh;60vw"/>
         </div>
 
         <div class="myPage-main-content">
-            <!---Part--->
+            <!-- 一、背景 -->
             <div class="myPage-paragraph" id="section1">
-                <h2 class="myPage-paragraph-headline-h2">1. Part</h2>
+                <h2 class="myPage-paragraph-headline-h2">一、背景</h2>
                 <p class="myPage-paragraph-content">
-                    In recent years, EI Nino phenomenon has caused drought and soil frost in several regions
-                    around
-                    the
-                    world. Soil frost and drought, derived from environmental and climatic disasters, can bring
-                    great
-                    hazards to agriculture and forestry. This year, we have decided to dedicate our research
-                    efforts
-                    to
-                    finding solutions for the severe challenges.
+                    电子产品消费和市场正在不断扩大，但由于电子产品的使用寿命有限以及相关品牌的更新换代，在市场扩张的同时，旧的电子设备不断被抛弃，产生了废弃电子产品的处理与回收的难题。以手机为例，在中国，每年闲置的手机数量高达 3~4 亿。预计到2030年，中国的电子垃圾将会比现在增加4倍甚至更多。根据现有的统计数据推测，未来十年后，中国人丢弃的手机数量将是现在的10倍以上<sup>1</sup>。电子垃圾的处理，迫在眉睫。
+                    电子垃圾和其他废弃物最大的不同就是其中含有丰富的可回收塑料和金属。每吨电子垃圾的含铜量是铜矿的 40 倍，含金量是金矿的 17 倍，1t 线路板可分离得到128.7kg 铜、29.6kg 锡、0.9kg 黄金以及 270kg塑料<sup>2</sup>。对电子垃圾进行拆解，将有价值的部件进行回收，所得到的资源可以进入冶炼企业、再生金属利用企业或稀贵金属企业再生利用。既减少对自然资源的需求，又能够处理有害物质，实现了环保、经济、科学、合理的目标，也避免了对环境造成进一步污染<sup>2</sup>。
                 </p>
             </div>
-            <!---part--->
+            <!-- 二、当前解决方案-->
             <div class="myPage-paragraph" id="section2">
-                <h2 class="myPage-paragraph-headline-h2"><b>2. Part</b></h2>
-                <h3 class="myPage-paragraph-headline-h3" id="childSection1"><b>part</b></h3>
-                <ul class="myPage-paragraph-ul">
-                    <li>Confirm the secretion function of the signal peptide KpSP and LMT</li>
-                    </li>
-                    <li>Improve the growth ability and protein expression ability of bacteria at low temperature
-                    </li>
-                    <li>Use MV<sup>140</sup> to display the CBM on the surface of <i>E. coli</i> to adsorb cellulose
-                    </li>
-                </ul>
-            </div>
-
-            <!---ppart1--->
-            <div class="myPage-paragraph" id="cchildSection1">
-                <h4 class="myPage-paragraph-headline-h4"><b>ppart</b></h4>
+                <h2 class="myPage-paragraph-headline-h2">二、当前解决方案</h2>
                 <p class="myPage-paragraph-content">
-                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
-                    which can
-                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
-                    further damage to
-                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
-                    it is
-                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
-                    verified the
-                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
-                    with the
-                    CspA CRE to alleviate oxidative stress in low temperatures. At
-                    last, we use
-                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
-                    cellulose, which prevents the
-                    bacteria from rain wash.
+                    传统的化学回收方法是将粉碎后的电子垃圾残渣进行浸出、萃取、沉淀、置换、离子交换、过滤以及蒸馏等操作，最终得到贵金属或其他电子工业原料。这种方法效率高，成本低廉，但不可避免会产生大量的废液并排放有毒气体,若不进行妥善处理，对环境产生的危害较大<sup>3</sup>。
                 </p>
             </div>
-
-            <!---ppart2--->
-            <div class="myPage-paragraph" id="cchildSection2">
-                <h4 class="myPage-paragraph-headline-h4"><b>ppart</b></h4>
-                <p class="myPage-paragraph-content">
-                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
-                    which can
-                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
-                    further damage to
-                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
-                    it is
-                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
-                    verified the
-                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
-                    with the
-                    CspA CRE to alleviate oxidative stress in low temperatures. At
-                    last, we use
-                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
-                    cellulose, which prevents the
-                    bacteria from rain wash.
-                </p>
-            </div>
-
-            <!---pppart1--->
-            <div class="myPage-paragraph" id="ccchildSection1">
-                <h5 class="myPage-paragraph-headline-h5"><b>pppart</b></h5>
-                <p class="myPage-paragraph-content">
-                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
-                    which can
-                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
-                    further damage to
-                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
-                    it is
-                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
-                    verified the
-                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
-                    with the
-                    CspA CRE to alleviate oxidative stress in low temperatures. At
-                    last, we use
-                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
-                    cellulose, which prevents the
-                    bacteria from rain wash.
-                </p>
-            </div>
-
-            <!---ppppart1--->
-            <div class="myPage-paragraph" id="cccchildSection1">
-                <h6 class="myPage-paragraph-headline-h6"><b>ppppart</b></h6>
-                <p class="myPage-paragraph-content">
-                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
-                    which can
-                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
-                    further damage to
-                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
-                    it is
-                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
-                    verified the
-                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
-                    with the
-                    CspA CRE to alleviate oxidative stress in low temperatures. At
-                    last, we use
-                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
-                    cellulose, which prevents the
-                    bacteria from rain wash.
-                </p>
-            </div>
-
-            <!--The current solution-->
+            <!-- 三、项目 -->
             <div class="myPage-paragraph" id="section3">
-                <h2 class="myPage-paragraph-headline-h2">3. Part</h2>
+                <h2 class="myPage-paragraph-headline-h2">三、项目</h2>
                 <p class="myPage-paragraph-content">
-                    At present, people primarily resorts to traditional methods to address these problems in
-                    China.
-                    Methods for soil drought including constructing water conservancy projects, mobilizing
-                    water sources, growing drought-resistant crops, and using chemical water-retention
-                    material.
-                    However, these solutions either involve substantial engineering work or require
-                    expensive and complicated synthesis, separation, and purification techniques.
-                    As for frost damage, preventive measures like greenhouses, mulching films, and straw
-                    burning are currently used, which are neither convenient, efficient, nor eco-friendly.
-                    Therefore, we need to take action to develop new strategies to mitigate the effects of
-                    drought and freeze stress without delay.
+                    因为金本身性质稳定，所以我们参考了化学方法中的氰化以及电解进行了整体方案的设计。通过产氰菌产氰形成氰金络合物对预处理过的产物进行处理，将其中的金浸出，再对得到的溶液通过电能细胞产电的方式电解，将金还原，得到海绵金。
                 </p>
+            </div>
 
-                <!---Fig.1--->
-                <div class="myPage-paragraph-fig">
-                    <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
-                    <div class="myPage-paragraph-fig-description"><b>Fig. 1 A collection diagram of existing
-                            methods.</b>
-                    </div>
+            <!-- （一）预处理 -->
+            <div class="myPage-paragraph" id="childSection1">
+                <h3 class="myPage-paragraph-headline-h3"><b>（一）预处理</b></h3>
+            </div>
+
+            <!-- 1.整体处理 -->
+            <div class="myPage-paragraph" id="cchildSection1">
+                <h4 class="myPage-paragraph-headline-h4"><b>1.整体处理</b></h4>
+                <p class="myPage-paragraph-content">
+                    去除零部件、漆涂层，破碎研磨，在曝气的旋转鼓反应器中处理，来消除聚苯乙烯、聚丙烯等低密度聚合物。
+                </p>
+            </div>
+
+            <!-- 2.贱金属处理 -->
+            <div class="myPage-paragraph" id="cchildSection2">
+                <h4 class="myPage-paragraph-headline-h4"><b>2.贱金属处理</b></h4>
+            </div>
+
+            <!---（1）Cu的处理--->
+            <div class="myPage-paragraph" id="ccchildSection1">
+                <h5 class="myPage-paragraph-headline-h5"><b>（1）Cu的处理</b></h5>
+                <p class="myPage-paragraph-content">
+                    对于铜，我们使用酸性氧化亚铁杆菌，将含铜的金属粉末放入含氧化亚铁硫杆菌的浸出柱中，反应72h后收集沉淀物。
+                </p>
+            </div>
+
+            <!---（2）Ni、Co、Mn等浸出的处理--->
+            <div class="myPage-paragraph" id="ccchildSection2">
+                <h5 class="myPage-paragraph-headline-h5"><b>（2）Ni、Co、Mn等浸出的处理</b></h5>
+                <p class="myPage-paragraph-content">
+                    苹果酸作为一种酸度温和的有机酸，适合用于这些贱金属的浸出和溶解。为了设计产出苹果酸的工程菌，我们做了以下几个设计。
+                </p>
+            </div>
+
+            <!---design 1--->
+            <div class="myPage-paragraph" id="cccchildSection1">
+                <h6 class="myPage-paragraph-headline-h6"><b>design 1</b></h6>
+                <p class="myPage-paragraph-content">
+                    ①以营养不良菌株酿酒酵母作为底盘生物，因为其代谢途径与野生型相比强度弱，易改造。
+                </p>
+            </div>
+
+            <!---design 2--->
+            <div class="myPage-paragraph" id="cccchildSection2">
+                <h6 class="myPage-paragraph-headline-h6"><b>design 2</b></h6>
+                <p class="myPage-paragraph-content">
+                    ②在GPD启动子作用下高水平表达Romdh 和Spmae*，在TEF启动子下低水平表达Afpyc，达到高效产出苹果酸的目的<sup>4</sup>。
+                </p>
+            </div>
+
+            <!-- （二）浸出氰化 -->
+            <div class="myPage-paragraph" id="childSection2">
+                <h3 class="myPage-paragraph-headline-h3"><b>（二）浸出氰化</b></h3>
+                <p class="myPage-paragraph-content">
+                    通过产氰的方式与金形成氰金络合物溶解到体系中，我们选择了以毕赤酵母作为底盘生物，发挥其表达量大，具有真核表达系统的优势，同时使用来自荧光假单胞菌Pseudomonas fluorescens的HCN合酶基因。该种酶在低氧环境下作用，容易在高氧环境下失活，通过这种酶，我们可以产出氢氰酸络合处理金<sup>5</sup>。
+                    同时，由于毕赤酵母本身无法在无氧条件下进行自身代谢，我们引入了来自酿酒酵母的ScURA1，编码一种二氢乳清酸脱氢酶，该酶使用富马酸盐作为一种替代电子受体来赋予毕赤酵母厌氧生长的能力<sup>6</sup>。
+                </p>
+            </div>
+
+            <!-- （三）磁性活性碳回收络合物及洗脱 -->
+            <div class="myPage-paragraph" id="childSection3">
+                <h3 class="myPage-paragraph-headline-h3"><b>（三）磁性活性碳回收络合物及洗脱</b></h3>
+                <p class="myPage-paragraph-content">
+                    使用磁性活性碳对体系中的氰金络合物进行吸附，磁性活性碳具有易分离，可重复利用的突出优点。具体方法如下：将负载的磁性活性炭加入10%KOH和5%K2CO3溶液中30分钟进行预处理，然后将负载的磁活性炭从溶液中磁性分离，将预处理后的磁性活性炭与去离子水在90°C下混合10分钟，然后从溶液中分离磁性活性炭，得到高纯度的氰金络合物溶液。用去离子水和乙醇冲洗磁性活性炭，最后在空气中干燥以进一步重复使用<sup>7</sup>。
+                </p>
+            </div>
+
+            <!-- （四）电能细胞还原获得海绵金 -->
+            <div class="myPage-paragraph" id="childSection4">
+                <h3 class="myPage-paragraph-headline-h3"><b>（四）电能细胞还原获得海绵金</b></h3>
+                <p class="myPage-paragraph-content">
+                    这一步骤，我们使用引入了核黄素合成基因的Shewanella carassii作为电能细胞，构建电解池，将氰金络合物在阴极还原成零价金，零价的金原子在溶液中会形成海绵金，进而被回收<sup>8</sup>。
+                </p>
+            </div>
+
+            <!-- 四、生物安全与环境友好-->
+            <div class="myPage-paragraph" id="section4">
+                <h2 class="myPage-paragraph-headline-h2">四、生物安全与环境友好</h2>
+                <p class="myPage-paragraph-content">
+                    通过对整体的流程描述我们可以看到，整个项目虽然能够达到回收金的目的，但同时也产生了氢氰酸，有生物安全隐患以及污染环境的风险，为了保障生物安全与环境安全，我们设计了下面一整套系统，使工程菌在发生意外泄漏时，能够自主地处理掉泄漏的氢氰酸并在处理后自杀。
+                    我们对工程菌引入了RNAi系统，设计了shRNA序列，在泄漏情况下，也就是有氧环境下，我们使用的SoxRS启动子会诱导下游基因表达<sup>9</sup>，产生siRNA，终止HCN合酶的合成<sup>10</sup>。并且为了通过微生物本身处理掉HCN，我们引入了氰化物降解酶，该酶从P. stutzeri AK4的细胞提取物中纯化，可以催化氰化物水解为氨和甲酸盐<sup>11</sup>。
+                    在生物安全方面，我们引入了nucA与nuiA的系统，并将nuiA分别与OxyR的kateG和ADH2启动子结合<sup>12,13</sup>，使其在低氧条件以及有HCN的条件下都表达，让工程菌只在泄漏后、并且处理完氢氰酸后再自杀。
+                </p>
+            </div>
+
+            <!-- 五、模块化的工业流程对接-->
+            <div class="myPage-paragraph" id="section5">
+                <h2 class="myPage-paragraph-headline-h2">五、模块化的工业流程对接</h2>
+                <p class="myPage-paragraph-content">
+                    为了便于后续的工业流程对接，我们考虑了目前金的主要应用——胶体金，胶体金的制备有着极高的纯度要求，我们根据此设计了电解法，以及磁性活性碳的吸附来提高纯度。
+                </p>
+            </div>
+
+            <div class="myPage-paragraph">
+                <p class="myPage-paragraph-content">
+                    对于一些特殊情况的需求，比如回收设施的建立预算较低，无法构建完整的回收线路，我们也可以通过缩短流程满足要求，在氰化浸出后，氰金络合物可以直接进入常规金矿的冶炼路径。
+                </p>
+            </div>
+
+            <!---Fig.1--->
+            <div class="myPage-paragraph-fig">
+                <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
+                <div class="myPage-paragraph-fig-description"><b>Fig. 1 A collection diagram of existing
+                        methods.</b>
                 </div>
             </div>
 
@@ -225,6 +236,27 @@
             </div>
 
         </div>
+
+        <!--Reference-->
+        <div class="myPage-paragraph" id="section6">
+            <h2 class="myPage-paragraph-headline-h2"><b>6. Reference</b></h2>
+            <ol class="myPage-paragraph-reference">
+                <li> Xu, X., Zeng, X., Boezen, H.M., and Huo, X. (2015). E-waste environmental contamination and harm to public health in China. Front Med 9, 220-228. 10.1007/s11684-015-0391-1.</li>
+                <li>Li, W., and Achal, V. (2020). Environmental and health impacts due to e-waste disposal in China - A review. Sci Total Environ 737, 139745. 10.1016/j.scitotenv.2020.139745.</li>
+                <li>Seeberger, J., Grandhi, R., Kim, S.S., Mase, W.A., Reponen, T., Ho, S.M., and Chen, A. (2016). Special Report: E-Waste Management in the United States and Public Health Implications. J Environ Health 79, 8-16.</li>
+                <li>Chen, X., Wang, Y., Dong, X., Hu, G., and Liu, L. (2017). Engineering rTCA pathway and C4-dicarboxylate transporter for l-malic acid production. Applied Microbiology and Biotechnology 101, 4041-4052. 10.1007/s00253-017-8141-8.</li>
+                <li>Laville, J., Blumer, C., Von Schroetter, C., Gaia, V., Défago, G., Keel, C., and Haas, D. (1998). Characterization of the hcnABC gene cluster encoding hydrogen cyanide synthase and anaerobic regulation by ANR in the strictly aerobic biocontrol agent Pseudomonas fluorescens CHA0. J Bacteriol 180, 3187-3196. 10.1128/jb.180.12.3187-3196.1998.</li>
+                <li>Shi, N.Q., and Jeffries, T.W. (1998). Anaerobic growth and improved fermentation of Pichia stipitis bearing a URA1 gene from Saccharomyces cerevisiae. Appl Microbiol Biotechnol 50, 339-345. 10.1007/s002530051301.</li>
+                <li>Xia, J., Mahandra, H., and Ghahreman, A. (2021). Efficient Gold Recovery from Cyanide Solution Using Magnetic Activated Carbon. ACS Appl Mater Interfaces 13, 47642-47649. 10.1021/acsami.1c13920.</li>
+                <li>Yang, C., Zhang, J., Zhang, B., Liu, D., Jia, J., Li, F., and Song, H. (2022). Engineering Shewanella carassii, a newly isolated exoelectrogen from activated sludge, to enhance methyl orange degradation and bioelectricity harvest. Synth Syst Biotechnol 7, 918-927. 10.1016/j.synbio.2022.04.010.</li>
+                <li>Baez, A., Majdalani, N., and Shiloach, J. (2014). Production of recombinant protein by a novel oxygen-induced system in Escherichia coli. Microb Cell Fact 13, 50. 10.1186/1475-2859-13-50.</li>
+                <li>Drinnenberg, I.A., Weinberg, D.E., Xie, K.T., Mower, J.P., Wolfe, K.H., Fink, G.R., and Bartel, D.P. (2009). RNAi in budding yeast. Science 326, 544-550. 10.1126/science.1176945.</li>
+                <li>Watanabe, A., Yano, K., Ikebukuro, K., and Karube, I. (1998). Cyanide hydrolysis in a cyanide-degrading bacterium, Pseudomonas stutzeri AK61, by cyanidase. Microbiology (Reading) 144 ( Pt 6), 1677-1682. 10.1099/00221287-144-6-1677.</li>
+                <li>Karatani, H., Fuse, Y., Mizuguchi, H., Monji, S., Oyama, H., Waku, T., and Iwasaki, M. (2019). Bioluminescence Microplate Assay of Cyanide with Escherichia coli Harboring a Plasmid Responsible for Cyanide-dependent Light Emission in Alginate Microenvironment. Anal Sci 35, 821-825. 10.2116/analsci.19N014.</li>
+                <li>Zhou, H., Wang, Z., and Qian, J. (2023). Engineering of the hypoxia-induced Pichia stipitis ADH2 promoter to construct a promoter library for Pichia pastoris. J Biotechnol 376, 24-32. 10.1016/j.jbiotec.2023.09.002.</li>
+            </ol>
+        </div>
+
     </div>
 </div>
 
@@ -295,7 +327,18 @@
 	}
 
 	.pointactive3{
-		top: 25vh;
+		top: 11vh;
+	}
+	.pointactive4{
+		top: 53vh;
+	}
+
+	.pointactive5{
+		top: 60vh;
+	}
+
+	.pointactive6{
+		top: 66vh;
 	}
 </style>
 

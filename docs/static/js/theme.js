@@ -132,13 +132,22 @@ observer.observe(myFooter); // 开始监听 myFooter 元素的出现
 // 获取元素
 // init controller
   var controller = new ScrollMagic.Controller({globalSceneOptions: {}});
-  // build scenes
-  new ScrollMagic.Scene({triggerElement: "#section1"})
-          .setClassToggle("#spointer", "pointactive1") // add class toggle
-          .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#section2"})
-          .setClassToggle("#spointer", "pointactive2") // add class toggle
-          .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#section3"})
-          .setClassToggle("#spointer", "pointactive3") // add class toggle
-          .addTo(controller);
+	  // build scenes
+    new ScrollMagic.Scene({triggerElement: "#section1"})
+            .setClassToggle("#spointer", "pointactive1") // add class toggle
+            .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#section2"})
+            .setClassToggle("#spointer", "pointactive2") // add class toggle
+            .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#section3"})
+            .setClassToggle("#spointer", "pointactive3") // add class toggle
+            .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#section4"})
+            .setClassToggle("#spointer", "pointactive4") // add class toggle
+            .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#section5"})
+            .setClassToggle("#spointer", "pointactive5") // add class toggle
+            .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#section6"})
+            .setClassToggle("#spointer", "pointactive6") // add class toggle
+            .addTo(controller);
