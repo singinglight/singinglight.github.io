@@ -1,0 +1,143 @@
+.navigation {
+	top: 0%;
+	position: fixed;
+	width: 100%;
+	height: 12vh;
+	background-color: #2f3439;
+	border-top-left-radius: 0.3125rem;
+	background-image: url('../img/tabbar.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: row;
+	z-index: 100;
+}
+
+.hide {
+	top: -7.2vh;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	height: 12vh;
+	width: 30%;
+	transform: translateX(5vw);
+}
+
+.log-icon {
+	text-align: right;
+	height: 12vh;
+	width: 50%;
+}
+
+.log-name {
+	height: 12vh;
+	width: 100%;
+}
+
+.logo-font {
+	height: 12vh;
+	width: 100%;
+	background-size: 100% 100%;
+}
+
+/* .logo-text{
+	position: relative;
+	font-size: 3rem;
+	top: 25%;
+	left: 10%;
+	color: white;
+	font-family: fantasy;
+} */
+div img {
+	width: 60%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.nav-items {
+	height: 12vh;
+	width: 60%;
+	transform: translateX(30%);
+	text-align: center;
+}
+
+.nav-frame {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 12vh;
+	transform: translateY(-15%);
+}
+
+.navigation ul li {
+	list-style: none;
+	float: left;
+	height: 12vh;
+}
+
+/* 删除列表的样式并设置浮动 */
+ul div {
+	float: left;
+	height: 12vh;
+}
+
+li img {
+	height: 70%;
+	width: 60%;
+	object-fit: cover;
+}
+
+li p {
+	margin-top: 3%;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav1 {
+	position: relative;
+	/* 设置相对定位 */
+	display: inline-block;
+	/* 让元素具有块级元素和行内元素的特性,即将块级元素转化为内联元素 */
+	width: 12%;
+}
+
+.nav2 {
+	display: none;
+	/* 将某元素隐藏起来 */
+	position: absolute;
+	/* 绝对定位 */
+	background-color: #f9f9f9;
+	width: 14.4vh;
+	height: auto;
+}
+
+.nav2 a {
+	color: black;
+	padding: 1.44vh 1.92vh； display: block;
+	/* 将a标签设置为块级标签 */
+}
+
+.nav2 a:hover {
+	background-color: #da8181
+}
+
+/* 鼠标悬浮时的颜色 */
+
+.nav1:hover .nav2 {
+	display: flex;
+	flex-direction: column;
+	top: 100%;
+}
+
+/* 鼠标悬浮在元素上时,变为块级标签 */
+
+.nav1:hover,
+.navigation li:hover {
+	background-color: #12adb8;
+}

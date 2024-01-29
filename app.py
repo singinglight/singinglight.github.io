@@ -14,5 +14,5 @@ def pages(page):
 
 if __name__ == '__main__':
     app.run(debug=True)
-    # freezer = Freezer(app)
-    # freezer.freeze()
+    freezer = Freezer(app)
+    freezer.freeze()

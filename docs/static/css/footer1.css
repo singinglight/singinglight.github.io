@@ -1,0 +1,152 @@
+.footer {
+	width: 100%;
+	height: 40vh;
+	background-size: 100% 100%;
+	background-image: url('../img/footer1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.footer .left {
+	width: 50vw;
+	height: 30vh;
+	/* background-color: antiquewhite; */
+	margin-left: 7vw;
+	position: relative;
+}
+
+.left .XMUicon{
+	width: 10vw;
+	height: 15vh;
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('../img/xmu.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 1vh;
+	left: -2vw;
+}
+
+.left .MAPicon{
+	width: 10vw;
+	height: 15vh;
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('../img/map.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 1vh;
+	right: 1vw;
+}
+
+.left .XMU {
+	height: 10vh;
+	width: 30vw;
+	/* background-color: aqua; */
+	margin-left: 8.3vw;
+	margin-top: 4vh;
+	font-size: 6.5vh;
+	color: white;
+	font-family: fantasy;
+	font-weight: 400;
+}
+
+.left .follow {
+	height: 5vh;
+	width: 10vw;
+	/* background-color: aqua; */
+	margin-left: 1.5vw;
+	margin-top: 2vh;
+	font-size: 3.5vh;
+	font-family: fantasy;
+	font-weight: 400;
+	color: white;
+}
+
+.left .icon-group {
+	height: 8vh;
+	width: 55vw;
+	margin-left: 1vw;
+	margin-top: 2vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.icon img {
+	width: 6vw;
+	height: 10vh;
+}
+
+.icon a {
+	transition: transform 0.3s ease;
+}
+
+.icon a:hover img {
+	transform: scale(1.2);
+}
+
+/* .icon @keyframes move {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	} */
+.left .web {
+	width: 80vw;
+	height: 2.8svh;
+	margin-left: -7vw;
+	overflow: hidden;
+}
+
+.footer .middlebar{
+	width: 0.5vw;
+	height: 35vh;
+	position: absolute;
+	background-color: lightblue;
+	border-radius: 3vw;
+	left: 63vw;
+	top: 2.5vh;
+}
+
+.footer .right {
+	width: 23vw;
+	height: 15vh;
+	margin-top: 15vh;
+	margin-left: 13vw;
+	font-weight: 400;
+	font-size: 3.5vh;
+	color: white;
+	text-align: center;
+	position: relative;
+	bottom: 0;
+}
+
+.right .text {
+	transform: translateY(5vh);
+	font-family: fantasy;
+	font-weight: 400;
+	color: white;
+}
+
+.right img {
+	float: left;
+	height: 16vh;
+	width: 10vw;
+	position: absolute;
+	top: -6vh;
+	left: -5vw;
+	z-index: 7;
+}
+
+.right a {
+	transition: transform 0.3s ease;
+}
+
+.right a:hover img {
+	transform: scale(1.2);
+}

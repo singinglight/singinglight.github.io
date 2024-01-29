@@ -3,11 +3,12 @@
 
 {% block page_content %}
 <!-- first-page -->
-<div class="common-page" style="background-image: url({{url_for('static',filename='img/first-page.jpg')}});background-repeat: no-repeat;background-position: center;background-size: 100% 100%;display: flex;flex-direction: row;">
+<div class="common-page" style="background-image: url({{url_for('static',filename='img/first-page.jpg')}});background-repeat: no-repeat;background-position: center;background-size: 100% 100%;display: flex;flex-direction: row;transform: translateY(12vh);height: 100vh;">
     <div id="clock">
         <div class="point"></div>
     </div>
     <div class="title"></div>
+    <button class="promotion-button" style="margin-left: 0vw;margin-top: 55vh;" onclick="window.location.href='https://www.bilibili.com/anime/'"><span>Promotion Vedio</span></button>
 </div>
 
 <!-- background  and significance page -->
