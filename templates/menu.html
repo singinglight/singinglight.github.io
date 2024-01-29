@@ -1,0 +1,71 @@
+<div class="navigation">
+    <div class="logo">
+        <div class="log-name">
+            <a href="#">
+                <div class="logo-font" style="background-image: url({{url_for('static',filename='img/bartitle.png')}});"></div>
+            </a>
+        </div>
+    </div>
+    <div class="nav-items">
+        <ul class="nav-frame">
+            <div class="nav1">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{url_for('static',filename='img/Home.png')}}" style="height: 70%;" />
+                    <p style="margin-top: 3%;color: black;font-size: 2vh;">HOME</p>
+                </a>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Team.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: black;font-size: 2vh;">TEAM</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="{{ url_for('pages', page='member') }}">Members</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Attributions</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="{{ url_for('pages', page='notebook') }}">Notebook</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Experiments</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Safty</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Collaborations</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Project.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: black;font-size: 2vh;">PROJECT</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="{{ url_for('pages', page='description') }}">Description</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Design</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Engineering Success</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Results</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Proof of Concept</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Proposed Implementation</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Lab.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: black;font-size: 2vh;">LAB</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Hardware</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Software</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Hp.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: black;font-size: 2vh;">HP</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Human Practices</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Integrated Human Practices</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Award.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: black;font-size: 2vh;">AWARDS</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Awards</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Best New Basic Part</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Engineering Success</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Best Hardware</a></p>
+                    <p style="line-height: 3vh;font-size: 1.8vh;"><a href="#">Best Integrated Human Practice</a>
+                    </p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>

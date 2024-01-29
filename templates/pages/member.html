@@ -1,0 +1,132 @@
+{% extends "layout1.html" %}
+{% block title %}Home{% endblock %}
+
+{% block page_content %}
+
+<div class="contanier">
+    <div class="banner"></div>
+    <div class="gear-group">
+        <!-- lab member -->
+        <div class="gear1" style="top: 15vh;left: 25vw;">
+            <div class="introduction" style="background-image: url({{url_for('static',filename='img/tyb.jpg')}});" id="tyb"></div>
+        </div>
+        <div class="gear1" style="top: 39vh;left: 27vw;">
+            <div class="introduction" style="background-image: url({{url_for('static',filename='img/tyb.jpg')}});" id="tyb"></div>
+        </div>
+        <div class="gear1" style="top: 49vh;left: 13vw;"></div>
+        <div class="gear1" style="top: 30vh;left: 40.5vw;"></div>
+        <div class="gear1" style="top: 54vh;left: 40vw;"></div>
+        <div class="gear1" style="top: 78vh;left: 38vw;"></div>
+        <div class="gear1" style="top: 12vh;left: 52vw;"></div>
+        <div class="gear1" style="top: 45vh;left: 54vw;"></div>
+        <div class="gear1" style="top: 13vh;left: 68vw;"></div>
+
+        <!-- sup member -->
+        <div class="gear2" style="top: 6.5vh;left: 38vw;">
+            <div class="introduction" style="background-image: url({{url_for('static',filename='img/tyb.jpg')}});" id="tyb"></div>
+        </div>
+        <div class="gear2" style="top: 63vh;left: 25vw;"></div>
+        <div class="gear2" style="top: 40vh;left: 69vw;"></div>
+
+        <!-- decoration gear one -->
+        <div class="gear3" style="top: 90vh;left: 27vw;width: 10vw;height: 15vh;"></div>
+        <div class="gear3" style="top: 37vh;left: 56vw;width: 6vw;height: 10vh;"></div>
+        <div class="gear3" style="top: 72vh;left: 53vw;width: 15vw;height: 25vh;"></div>
+
+        <!-- decoration gear two -->
+        <div class="gear4" style="top: 33vh;left: 17vw;"></div>
+
+        <!-- decoration gear three -->
+        <div class="gear5" style="top: 32vh;left: 62vw;"></div>
+
+        <!-- decoration gear four -->
+        <div class="gear6" style="top: 15vh;left: 15vw;"></div>
+
+    </div>
+    <div class="pop-up tyb">
+        <div class="gear">
+            <div class="roll"></div>
+            <div class="photo"></div>
+        </div>
+        <div class="separation"></div>
+        <div class="motto">
+            <div class="motto-title">Motto</div>
+            <div class="motto-word">
+                <p style="line-height: 1.5;display: inline-block;vertical-align: middle;">No road to glory is paved with flowers</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="myFooter">
+    <div class="left">
+        <div class="XMUicon"></div>
+        <div class="XMU">Xiamen University</div>
+        <div class="MAPicon"></div>
+        <div class="follow">follow us</div>
+        <div class="icon-group">
+            <!-- 点击跳转可以自行在a中加入href -->
+            <div class="icon" style="margin-left: 0.5vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/wechat.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/facebook.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/blog.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/camera.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/twitter.png')}}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="web" style="margin-top: 3vh;">
+            <a href="https://creativecommons.org/licenses/by/4.0/"
+                style="color: white;font-family: Aaargh;font-size: 2vh;">© 2023 - Content on this site is
+                licensed under a Creative Commons Attribution 4.0 International license.</a>
+        </div>
+        <div class="web" style="margin-top: 0vh;">
+            <a href="https://github.com/singinglight/singinglight.github.io"
+                style="color: white;font-family: Aaargh;font-size: 2vh;">The repository used to create this
+                website is available at github.com/singinglight/singinglight.github.io.</a>
+        </div>
+    </div>
+    <div class="middlebar"></div>
+    <div class="right">
+        <a>
+            <img src="{{url_for('static',filename='img/e-mail.png')}}" />
+        </a>
+        <div class="text">
+            contact us<br />
+            igem_xmu@163.com
+        </div>
+    </div>
+</div>
+
+<!--<script src="{{ url_for('static', filename = 'js/jquery-3.5.1.min.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename = 'js/loading.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename = 'js/tween.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename = 'js/gsap.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename = 'js/scrollmagic.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename = 'js/animation.gsap.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename = 'js/wow.min.js') }}"></script>-->
+
+<link href="{{ url_for('static', filename = 'css/members.css') }}" rel="stylesheet">
+
+<script src="{{ url_for('static', filename = 'js/member.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/theme.js') }}"></script>
+
+{% endblock %}
+

@@ -1,0 +1,276 @@
+{% extends "layout1.html" %}
+{% block title %}Home{% endblock %}
+
+{% block page_content %}
+
+
+<div class="myScrollspy">
+    <div class="left-bar">
+        <div class="left-bar-right">
+            <div class="left-bar-right-item">
+                <a href="#section1" class="sidebar-link" data-section="section1">1 Part</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section2" class="sidebar-link" data-section="section2">2 Part</a>
+            </div>
+            <div class="left-bar-right-item-two small-item">
+                <a href="#childSection1" class="sidebar-link-two" data-section="childSection1">2.1 part</a>
+            </div>
+            <div class="left-bar-right-item-three small-item">
+                <a href="#cchildSection1" class="sidebar-link-two" data-section="cchildSection1">2.1.1 ppart</a>
+            </div>
+            <div class="left-bar-right-item-three small-item">
+                <a href="#cchildSection2" class="sidebar-link-two" data-section="cchildSection2">2.1.2 ppart</a>
+            </div>
+            <div class="left-bar-right-item-four small-item">
+                <a href="#ccchildSection1" class="sidebar-link-two" data-section="ccchildSection1">2.1.1.1 pppart</a>
+            </div>
+            <div class="left-bar-right-item-five small-item">
+                <a href="#cccchildSection6" class="sidebar-link-two" data-section="cccchildSection1">2.1.1.1.1 ppppart</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section3" class="sidebar-link" data-section="section3">3 Overview</a>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-point" id="spointer"></div>
+</div>
+
+<div class="myPage">
+    <div class="myPage-main">
+        <div style="height: 12vh;position:relative;"></div>
+        <div class="page-background">
+            <img src="img/hourglass.png" style="transform: translateX(15vw);width: 60vw;z-index: -2;"/>
+            <img src="img/description.png" style="transform: translate(15vw,-50vh) rotate(30deg);height: 27vh;60vw"/>
+        </div>
+
+        <div class="myPage-main-content">
+            <!---Part--->
+            <div class="myPage-paragraph" id="section1">
+                <h2 class="myPage-paragraph-headline-h2">1. Part</h2>
+                <p class="myPage-paragraph-content">
+                    In recent years, EI Nino phenomenon has caused drought and soil frost in several regions
+                    around
+                    the
+                    world. Soil frost and drought, derived from environmental and climatic disasters, can bring
+                    great
+                    hazards to agriculture and forestry. This year, we have decided to dedicate our research
+                    efforts
+                    to
+                    finding solutions for the severe challenges.
+                </p>
+            </div>
+            <!---part--->
+            <div class="myPage-paragraph" id="section2">
+                <h2 class="myPage-paragraph-headline-h2"><b>2. Part</b></h2>
+                <h3 class="myPage-paragraph-headline-h3" id="childSection1"><b>part</b></h3>
+                <ul class="myPage-paragraph-ul">
+                    <li>Confirm the secretion function of the signal peptide KpSP and LMT</li>
+                    </li>
+                    <li>Improve the growth ability and protein expression ability of bacteria at low temperature
+                    </li>
+                    <li>Use MV<sup>140</sup> to display the CBM on the surface of <i>E. coli</i> to adsorb cellulose
+                    </li>
+                </ul>
+            </div>
+
+            <!---ppart1--->
+            <div class="myPage-paragraph" id="cchildSection1">
+                <h4 class="myPage-paragraph-headline-h4"><b>ppart</b></h4>
+                <p class="myPage-paragraph-content">
+                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
+                    which can
+                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
+                    further damage to
+                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
+                    it is
+                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
+                    verified the
+                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
+                    with the
+                    CspA CRE to alleviate oxidative stress in low temperatures. At
+                    last, we use
+                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
+                    cellulose, which prevents the
+                    bacteria from rain wash.
+                </p>
+            </div>
+
+            <!---ppart2--->
+            <div class="myPage-paragraph" id="cchildSection2">
+                <h4 class="myPage-paragraph-headline-h4"><b>ppart</b></h4>
+                <p class="myPage-paragraph-content">
+                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
+                    which can
+                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
+                    further damage to
+                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
+                    it is
+                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
+                    verified the
+                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
+                    with the
+                    CspA CRE to alleviate oxidative stress in low temperatures. At
+                    last, we use
+                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
+                    cellulose, which prevents the
+                    bacteria from rain wash.
+                </p>
+            </div>
+
+            <!---pppart1--->
+            <div class="myPage-paragraph" id="ccchildSection1">
+                <h5 class="myPage-paragraph-headline-h5"><b>pppart</b></h5>
+                <p class="myPage-paragraph-content">
+                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
+                    which can
+                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
+                    further damage to
+                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
+                    it is
+                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
+                    verified the
+                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
+                    with the
+                    CspA CRE to alleviate oxidative stress in low temperatures. At
+                    last, we use
+                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
+                    cellulose, which prevents the
+                    bacteria from rain wash.
+                </p>
+            </div>
+
+            <!---ppppart1--->
+            <div class="myPage-paragraph" id="cccchildSection1">
+                <h6 class="myPage-paragraph-headline-h6"><b>ppppart</b></h6>
+                <p class="myPage-paragraph-content">
+                    We try to construct engineered bacteria to express antifreeze protein based on synthetic biology
+                    which can
+                    lower the freezing point of water and inhibit the growth of small ice crystals, preventing
+                    further damage to
+                    roots from ice crystals. Since antifreeze protein needs to bind to the surface of ice directly,
+                    it is
+                    necessary that AFPs should be secreted into the soil from our engineered bacteria. First, we
+                    verified the
+                    secretion function of the two signal peptides KpSP and LMT. Second, we combine a logic AND gate
+                    with the
+                    CspA CRE to alleviate oxidative stress in low temperatures. At
+                    last, we use
+                    MV<sup>140</sup> to display the CBM on the surface of engineered <i>E. coli</i> to adsorb
+                    cellulose, which prevents the
+                    bacteria from rain wash.
+                </p>
+            </div>
+
+            <!--The current solution-->
+            <div class="myPage-paragraph" id="section3">
+                <h2 class="myPage-paragraph-headline-h2">3. Part</h2>
+                <p class="myPage-paragraph-content">
+                    At present, people primarily resorts to traditional methods to address these problems in
+                    China.
+                    Methods for soil drought including constructing water conservancy projects, mobilizing
+                    water sources, growing drought-resistant crops, and using chemical water-retention
+                    material.
+                    However, these solutions either involve substantial engineering work or require
+                    expensive and complicated synthesis, separation, and purification techniques.
+                    As for frost damage, preventive measures like greenhouses, mulching films, and straw
+                    burning are currently used, which are neither convenient, efficient, nor eco-friendly.
+                    Therefore, we need to take action to develop new strategies to mitigate the effects of
+                    drought and freeze stress without delay.
+                </p>
+
+                <!---Fig.1--->
+                <div class="myPage-paragraph-fig">
+                    <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
+                    <div class="myPage-paragraph-fig-description"><b>Fig. 1 A collection diagram of existing
+                            methods.</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="myFooter">
+    <div class="left">
+        <div class="XMUicon"></div>
+        <div class="XMU">Xiamen University</div>
+        <div class="MAPicon"></div>
+        <div class="follow">follow us</div>
+        <div class="icon-group">
+            <!-- 点击跳转可以自行在a中加入href -->
+            <div class="icon" style="margin-left: 0.5vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/wechat.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/facebook.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/blog.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/camera.png')}}" alt="">
+                </a>
+            </div>
+            <div class="icon" style="margin-left: 4vw;">
+                <a>
+                    <img src="{{url_for('static',filename='img/twitter.png')}}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="web" style="margin-top: 3vh;">
+            <a href="https://creativecommons.org/licenses/by/4.0/"
+                style="color: white;font-family: Aaargh;font-size: 2vh;">© 2023 - Content on this site is
+                licensed under a Creative Commons Attribution 4.0 International license.</a>
+        </div>
+        <div class="web" style="margin-top: 0vh;">
+            <a href="https://github.com/singinglight/singinglight.github.io"
+                style="color: white;font-family: Aaargh;font-size: 2vh;">The repository used to create this
+                website is available at github.com/singinglight/singinglight.github.io.</a>
+        </div>
+    </div>
+    <div class="middlebar"></div>
+    <div class="right">
+        <a>
+            <img src="{{url_for('static',filename='img/e-mail.png')}}" />
+        </a>
+        <div class="text">
+            contact us<br />
+            igem_xmu@163.com
+        </div>
+    </div>
+</div>
+
+<style>
+    .pointactive1{
+		top: 0.7vh;
+	}
+
+	.pointactive2{
+		top: 6vh;
+	}
+
+	.pointactive3{
+		top: 25vh;
+	}
+</style>
+
+<script src="{{ url_for('static', filename = 'js/jquery-3.5.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/loading.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/tween.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/gsap.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/scrollmagic.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/animation.gsap.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/wow.min.js') }}"></script>
+
+<script src="{{ url_for('static', filename = 'js/theme.js') }}"></script>
+{% endblock %}
+

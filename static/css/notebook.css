@@ -1,0 +1,468 @@
+.mainpage {
+    width: 100vw;
+    height: 130vh;
+    background-color: #e0f8eb;
+    transform: translateY(12vh);
+}
+
+.notebookbanner{
+    width: 40vw;
+    height: 20vh;
+    background-image: url('../img/notebookbanner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transform: translate(30vw,5vh);
+}
+
+.father {
+    line-height: 1.5;
+    height: 100%;
+    margin-bottom: 50px;
+    margin-left: 600px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+#container {
+    width: 60%;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.book {
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateY(0deg) rotateZ(-45deg) translate(-10vw,10vh);
+    transition: transform 1s;
+    position: relative;
+    left: 25%;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+    width: 35rem;
+    height: 31rem;
+}
+
+.book .side {
+    width: 3em;
+    height: 100%;
+    background: whitesmoke;
+    position: absolute;
+    left: -3em;
+    top: 0;
+    transform-origin: 100% 100%;
+    transform: rotateY(-90deg) rotateX(0deg);
+}
+
+.book .bottom {
+    width: 35rem;
+    height: 3em;
+    background: #e2e2e2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: 100% 100%;
+    transform: rotateX(90deg);
+}
+
+.book.open {
+    transform: rotateX(5deg) rotateY(0deg) rotateZ(0deg) translateY(5vh);
+}
+
+.book .paper,
+.book .shadow {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.book .shadow {
+    background: transparent;
+    transform: translateZ(-3em);
+    box-shadow: -1em 1em 0px 0px #A4DBD5;
+    z-index: 1;
+}
+
+.book .paper {
+    transition: transform 1s, box-shadow 0.5s 0.2s;
+    transform-origin: 0 50%;
+    transform-style: preserve-3d;
+}
+
+.book .paper.open {
+    box-shadow: 2.2em 1em 0px 0px #A4DBD5;
+    /* 侧页改这个颜色 */
+    transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
+}
+
+.book .paper .page.front {
+    transition: transform 1s;
+    transform-origin: 0 50%;
+    backface-visibility: hidden;
+    z-index: 2;
+}
+
+.svg {
+    width: 0 !important;
+}
+
+.book .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: translateZ(0px);
+    transform: translateZ(0px);
+}
+
+.book .first .page {
+    background-image: url("../img/cover.jpg");
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+}
+
+.book .first .page.front:after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.book .paper .back {
+    transition: transform 1s;
+    transform-origin: 0 50%;
+    background: #e1e1e1;
+}
+
+.book .first.paper .back {
+    background-color: #f1f1f1;
+}
+
+.book .intro {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.book .intro h2 {
+    padding: 0.5em 0.5em;
+    font-size: 2em;
+    color: #fff;
+    word-break: break-all;
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.book .intro h1 {
+    padding: 0.5em 0.25em;
+    font-size: 6em;
+    color: #fff;
+    word-break: break-all;
+}
+
+.book .paper:not(.first) .page {
+    background-color: #f1f1f1;
+    background-image: linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+    background-size: 100% 2.5em;
+}
+
+.book .paper:not(.first) .back {
+    background: #f1f1f1;
+}
+
+.book .open.second .back {
+    transform: translateZ(-1px);
+}
+
+.book .open.third .back {
+    transform: translateZ(-2px);
+}
+
+.book .open.fourth .back {
+    transform: translateZ(-3px);
+}
+
+.book .open.five .back {
+    transform: translateZ(-4px);
+}
+
+.book .open.six .back {
+    transform: translateZ(-5px);
+}
+
+.book .open.seven .back {
+    transform: translateZ(-6px);
+}
+
+.book .open.eight .back {
+    transform: translateZ(-7px);
+}
+
+.book .open.nine .back {
+    transform: translateZ(-8px);
+}
+
+.book .open.ten .back {
+    transform: translateZ(-9px);
+}
+
+.book .open.ten-1 .back {
+    transform: translateZ(-10px);
+}
+
+.book .open.ten-2 .back {
+    transform: translateZ(-11px);
+}
+
+.book .open.ten-3 .back {
+    transform: translateZ(-12px);
+}
+
+.book .open.ten-4 .back {
+    transform: translateZ(-13px);
+}
+
+.book .open.ten-5 .back {
+    transform: translateZ(-14px);
+}
+
+.book .open.ten-6 .back {
+    transform: translateZ(-15px);
+}
+
+.book .open.ten-7 .back {
+    transform: translateZ(-16px);
+}
+
+.book .paper .first {
+    z-index: 17;
+}
+
+.book .paper .second {
+    z-index: 16;
+}
+
+.book .paper .third {
+    z-index: 15;
+}
+
+.book .paper .fourth {
+    z-index: 14;
+}
+
+.book .paper .five {
+    z-index: 13;
+}
+
+.book .paper .six {
+    z-index: 12;
+}
+
+.book .paper .seven {
+    z-index: 11;
+}
+
+.book .paper .eight {
+    z-index: 10;
+}
+
+.book .paper .nine {
+    z-index: 9;
+}
+
+.book .paper .ten {
+    z-index: 8;
+}
+
+.book .paper .ten-1 {
+    z-index: 7;
+}
+
+.book .paper .ten-2 {
+    z-index: 6;
+}
+
+.book .paper .ten-3 {
+    z-index: 5;
+}
+
+.book .paper .ten-4 {
+    z-index: 4;
+}
+
+.book .paper .ten-5 {
+    z-index: 3;
+}
+
+.book .paper .ten-6 {
+    z-index: 2;
+}
+
+.book .paper .ten-7 {
+    z-index: 1;
+}
+
+.book .second-page #vara-container {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+.diary-title {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: optima;
+    color: lightcoral;
+}
+
+.diary-content {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    font-family: optima;
+}
+
+.book .paper,
+.book .shadow {
+    width: 35rem;
+}
+
+@media (max-width: 700px) {
+    .father {
+        margin-left: 60px;
+    }
+
+    .book {
+        left: 0;
+        height: 21rem;
+        width: 17.5rem;
+        margin-top: 80px;
+    }
+
+    .book .bottom {
+        width: 17.5rem;
+    }
+
+    .book .paper,
+    .book .shadow {
+        width: 17.5rem !important;
+    }
+
+    .diary-content,
+    .diary-title {
+        font-size: 5px;
+    }
+
+    .book .first .page {
+        background-size: 100% 110%
+    }
+}
+
+.open-me {
+    color: #d2f2ef;
+    font-family: Optima-Medium;
+    font-size: 5rem;
+    transform: translate(-30vw,10vh);
+}
+
+@media (min-width: 1200px) {
+    .open-me {
+        color: cadetblue;
+        font-family: Optima-Medium;
+        font-size: 5rem;
+    }
+}
+
+.book .paper.first .front {
+    transform: translateZ(17px);
+}
+
+.book .paper.second .front {
+    transform: translateZ(16px);
+}
+
+.book .paper.third .front {
+    transform: translateZ(15px);
+}
+
+.book .paper.fourth .front {
+    transform: translateZ(14px);
+}
+
+.book .paper.five .front {
+    transform: translateZ(13px);
+}
+
+.book .paper.six .front {
+    transform: translateZ(12px);
+}
+
+.book .paper.seven .front {
+    transform: translateZ(11px);
+}
+
+.book .paper.eight .front {
+    transform: translateZ(10px);
+}
+
+.book .paper.nine .front {
+    transform: translateZ(9px);
+}
+
+.book .paper.ten .front {
+    transform: translateZ(8px);
+}
+
+.book .paper.ten-1 .front {
+    transform: translateZ(7px);
+}
+
+.book .paper.ten-2 .front {
+    transform: translateZ(6px);
+}
+
+.book .paper.ten-3 .front {
+    transform: translateZ(5px);
+}
+
+.book .paper.ten-4 .front {
+    transform: translateZ(4px);
+}
+
+.book .paper.ten-5 .front {
+    transform: translateZ(3px);
+}
+
+.book .paper.ten-6 .front {
+    transform: translateZ(2px);
+}
+
+.book .paper.ten-7 .front {
+    transform: translateZ(1px);
+}
+
+.diary-picture {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.diary-picture img {
+    max-width: 45%;
+}
+
+.dropdown-toggle,
+.nav-link {
+    font-size: 1rem;
+}

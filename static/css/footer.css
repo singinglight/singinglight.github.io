@@ -1,0 +1,67 @@
+.footer {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../img/footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	z-index: 3;
+	position: relative;
+}
+
+.cloud{
+	height: 60vh;
+	width: 100vw;
+	background-image: url('../img/cloud.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.follow_us {
+	width: 25vw;
+	height: 20vh;
+	transform: translate(50vw, -20vh);
+	background-image: url('../img/follow.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.xmu-icon {
+	width: 15vw;
+	height: 20vh;
+	position: relative;
+	transform: translate(22vw, 39vh);
+}
+
+.map-icon {
+	width: 15vw;
+	height: 20vh;
+	position: relative;
+	transform: translate(49vw, 18vh);
+}
+
+.icongroup {
+	width: 30vw;
+	height: 30vh;
+	position: relative;
+	transform: translate(69vw, -30vh);
+}
+
+.icon {
+	position: absolute;
+}
+
+.icon img {
+	width: 7vw;
+	height: 11vh;
+}
+
+.icon a {
+	transition: transform 0.3s ease;
+}
+
+.icon a:hover img {
+	transform: scale(1.2);
+}
