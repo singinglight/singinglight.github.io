@@ -50,7 +50,6 @@
 	margin-top: 4vh;
 	font-size: 6.5vh;
 	color: white;
-	font-family: fantasy;
 	font-weight: 400;
 }
 
@@ -61,7 +60,6 @@
 	margin-left: 1.5vw;
 	margin-top: 2vh;
 	font-size: 3.5vh;
-	font-family: fantasy;
 	font-weight: 400;
 	color: white;
 }
@@ -128,7 +126,6 @@
 
 .right .text {
 	transform: translateY(5vh);
-	font-family: fantasy;
 	font-weight: 400;
 	color: white;
 }
